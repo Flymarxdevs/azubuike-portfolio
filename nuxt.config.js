@@ -42,7 +42,7 @@ export default defineNuxtConfig({
 			{
 				hid: "og:image",
 				property: "og:image",
-				content: "https://walefolio.netlify.app/img/wale.png",
+				content: "https://walefolio.netlify.app/img/wale.jpg",
 			},
 
 			// TWITTER
