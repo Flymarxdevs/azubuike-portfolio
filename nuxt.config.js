@@ -4,16 +4,14 @@ import { defineNuxtConfig } from "nuxt3";
 export default defineNuxtConfig({
 	// vite: false,
 	meta: {
-		title:
-			"Azubuike Duru, Product, UI/UX designer and developer based in NIgeria",
+		title: "Azubuike Duru, Product & UI/UX designer based in NIgeria",
 		meta: [
 			{ charset: "utf-8" },
 			{ name: "viewport", content: "width=device-width, initial-scale=1" },
 			{
 				hid: "title",
 				name: "title",
-				content:
-					"Azubuike Duru, Product, UI/UX designer and developer based in Nigeria",
+				content: "Azubuike Duru, Product & UI/UX designer based in NIgeria",
 			},
 			{
 				hid: "description",
@@ -30,8 +28,7 @@ export default defineNuxtConfig({
 			{
 				hid: "og:title",
 				property: "og:title",
-				content:
-					"Azubuike Duru, Product, UI/UX designer and developer based in NIgeria",
+				content: "Azubuike Duru, Product & UI/UX designer based in NIgeria",
 			},
 			{
 				hid: "og:description",
@@ -59,8 +56,7 @@ export default defineNuxtConfig({
 			{
 				hid: "twitter:title",
 				property: "twitter:title",
-				content:
-					"Azubuike Duru, Product, UI/UX designer and developer based in NIgeria",
+				content: "Azubuike Duru, Product & UI/UX designer based in NIgeria",
 			},
 			{
 				hid: "twitter:description",
