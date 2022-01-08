@@ -28,7 +28,7 @@
 				</div>
 				<figure class="relative col-span-1 h-full">
 					<div
-						class="img-cont absolute top-0 right-0 h-full w-[18rem] md:w-[200%] lg:w-[170%] overflow-y-hidden"
+						class="img-cont absolute top-0 right-0 h-full w-[11.5rem] md:w-[200%] lg:w-[170%] overflow-y-hidden"
 					>
 						<img src="~/assets/img/patrick.png" alt="Picture of wale" />
 					</div>
