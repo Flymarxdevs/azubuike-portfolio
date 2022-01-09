@@ -1,7 +1,7 @@
 <template>
 	<nav id="site-nav" class :class="{ 'active': navActive.active }">
 		<ul
-			class="nav-list invisible md:visible fixed md:relative top-0 left-0 w-full md:w-fit h-screen md:h-auto flex flex-col md:flex-row justify-center items-center gap-20 md:gap-4 text-center md:text-left text-3xl md:text-sm lowercase font-extralight md:font-normal tracking-widest p-4 md:p-0 bg-indigo-600 md:bg-transparent text-indigo-200 md:text-slate-500 z-10"
+			class="nav-list invisible md:visible fixed md:relative top-0 left-0 w-full md:w-fit h-screen md:h-auto flex flex-col md:flex-row justify-center items-center gap-20 md:gap-4 text-center md:text-left text-3xl md:text-sm lowercase font-extralight md:font-normal tracking-widest p-4 md:p-0 bg-indigo-600 md:bg-transparent text-indigo-200 md:text-slate-500"
 		>
 			<li class="list-item">Services</li>
 			<li class="list-item">Works</li>

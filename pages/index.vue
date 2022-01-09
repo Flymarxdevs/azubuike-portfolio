@@ -1,26 +1,27 @@
 <template>
-	<section id="site-hero" class="p-4 pt-12">
+	<section id="site-hero" class="relative p-4 pt-12">
 		<div
 			class="wrapper grid md:grid-cols-5 items-center gap-6 h-[28rem] max-w-6xl m-auto"
 		>
 			<header
-				class="col-span-3 grid grid-cols-3 items-center h-full min-h-[15rem]"
+				class="hero-header col-span-3 grid grid-cols-3 items-center h-full min-h-[15rem]"
 			>
+				<div class="shape-bg-wrapper absolute top-0 left-0 w-full h-full"></div>
 				<div
-					class="cont relative col-span-2 flex flex-col justify-between h-full max-h-28 md:max-h-60"
+					class="cont col-span-2 flex flex-col justify-between h-full max-h-28 md:max-h-60"
 				>
 					<h1
-						class="font-heading font-black text-5xl tracking-tight mb-4 md:text-7xl z-10"
+						class="font-heading font-black text-5xl text-white tracking-tight mb-4 md:text-7xl z-10"
 					>
 						{{ details.name.first }}
 						<br />
 						{{ details.name.last }}
 					</h1>
-					<ul class="socials flex gap-4">
+					<ul class="relative socials flex gap-4">
 						<li
 							v-for="social in details.socials"
 							:key="social.name"
-							class="text-indigo-500 hover:text-indigo-800 underline underline-offset-8"
+							class="text-indigo-200 hover:text-white hover:underline underline-offset-8"
 						>
 							<a :href="social.url" target="_blank" rel="noopener">{{ social.name }}</a>
 						</li>
@@ -51,8 +52,39 @@
 				</button>
 			</section>
 		</div>
+
+		<rounded-filter />
 	</section>
 </template>
+
+<style scoped>
+.hero-header {
+	@apply relative;
+}
+
+.shape-bg-wrapper {
+	filter: url(#round);
+}
+
+.hero-header .shape-bg-wrapper::before {
+	@apply absolute bottom-0 right-0 w-[120%] h-[120%] bg-indigo-600;
+	content: "";
+	clip-path: polygon(15% 16%, 84% 23%, 98% 100%, 5% 100%);
+	animation: morph 12s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes morph {
+	0% {
+		clip-path: polygon(15% 16%, 84% 23%, 98% 100%, 5% 100%);
+	}
+	50% {
+		clip-path: polygon(10% 26%, 92% 16%, 98% 100%, 5% 100%);
+	}
+	100% {
+		clip-path: polygon(8% 28%, 100% 14%, 100% 100%, 15% 100%);
+	}
+}
+</style>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
