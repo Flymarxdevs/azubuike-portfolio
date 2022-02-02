@@ -61,7 +61,7 @@
 		</section>
 
 		<section class="site-section">
-			<div class="wrapper md:max-w-3xl m-auto">
+			<div class="wrapper md:max-w-4xl m-auto">
 				<h2 class="md:pl-6 mb-2">&mdash; Projects</h2>
 
 				<header class="mb-4 grid gap-4 md:grid-cols-2">
@@ -92,7 +92,7 @@
 						class="project md:p-2 min-h-[20rem]"
 					>
 						<div
-							class="transition-all wrapper flex flex-col bg-white w-full h-full transform md:hover:scale-110 rounded-xl"
+							class="transition-all wrapper flex flex-col bg-white w-full h-full transform md:hover:scale-110 rounded-xl shadow"
 						>
 							<header class="relative p-4">
 								<div class="cont flex justify-between">
