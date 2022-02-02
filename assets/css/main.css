@@ -4,7 +4,7 @@
 
 @layer components {
 	body {
-		@apply text-slate-800 font-sans font-medium;
+		@apply text-slate-800 font-sans font-medium bg-slate-100;
 	}
 
 	h1,
@@ -26,4 +26,8 @@
 	.icon.mode-outline path {
 		@apply stroke-current;
 	}
+}
+
+.site-section {
+	@apply w-full p-4 py-8;
 }
