@@ -16,8 +16,7 @@ export default defineNuxtConfig({
 			{
 				hid: "description",
 				name: "description",
-				content:
-					"Portfolio site - Azubuike Duru is a Product Designer, UI/UX designer and developer based in Nigeria",
+				content: "Portfolio site - Azubuike Duru is a Product Designer, UI/UX designer and developer based in Nigeria",
 			},
 			{ hid: "og:type", property: "og:type", content: "website" },
 			{
@@ -33,8 +32,7 @@ export default defineNuxtConfig({
 			{
 				hid: "og:description",
 				property: "og:description",
-				content:
-					"Portfolio site - Azubuike Duru is a Product Designer, UI/UX designer and developer based in Nigeria",
+				content: "Portfolio site - Azubuike Duru is a Product Designer, UI/UX designer and developer based in Nigeria",
 			},
 			{
 				hid: "og:image",
@@ -61,8 +59,7 @@ export default defineNuxtConfig({
 			{
 				hid: "twitter:description",
 				property: "twitter:description",
-				content:
-					"Portfolio site - Azubuike Duru is a Product Designer, UI/UX designer and developer based in Nigeria",
+				content: "Portfolio site - Azubuike Duru is a Product Designer, UI/UX designer and developer based in Nigeria",
 			},
 			{
 				hid: "twitter:image",
@@ -100,5 +97,12 @@ export default defineNuxtConfig({
 		postcss: {
 			postcssOptions: require("./postcss.config.js"),
 		},
+	},
+	buildModules: ["@nuxtjs/strapi"],
+	strapi: {
+		url: process.env.STRAPI_URL || "http://localhost:1337",
+		prefix: "/api",
+		version: "v4",
+		cookie: {},
 	},
 });
